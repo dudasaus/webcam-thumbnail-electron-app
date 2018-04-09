@@ -1,0 +1,44 @@
+body {
+
+}
+
+#my-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0;
+}
+
+#drag-zone {
+  -webkit-app-region: drag;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+#close-button {
+  height: 28px;
+  width: 28px;
+  font-size: 1.5em;
+  background: rgba(0,0,0,0.5);
+  color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 5;
+  cursor: default;
+  -webkit-app-region: no-drag;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+#close-button:hover {
+  opacity: 1;
+}
