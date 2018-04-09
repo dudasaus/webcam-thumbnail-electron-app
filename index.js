@@ -17,6 +17,7 @@ function createWindow() {
     slashes: true,
   }));
   win.setAlwaysOnTop(true);
+  win.on('close', () => app.quit());
 }
 
 app.on('ready', createWindow);
